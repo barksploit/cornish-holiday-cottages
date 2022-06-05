@@ -1,0 +1,17 @@
+</main>
+</div>
+<section id="footer-map">
+
+    <?php echo do_shortcode('[wpgmza id="1"]'); ?>
+
+</section>
+<footer id="footer" role="contentinfo">
+    <div id="copyright">
+        &copy; <?php echo esc_html(date_i18n(__('Y', 'blankslate'))); ?> <?php echo esc_html(get_bloginfo('name')); ?>
+    </div>
+</footer>
+</div>
+<?php wp_footer(); ?>
+</body>
+
+</html>

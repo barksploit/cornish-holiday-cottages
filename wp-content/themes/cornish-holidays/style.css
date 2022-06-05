@@ -1,0 +1,510 @@
+/*
+Theme Name: Cornish Holiday Cottages
+Author: Thomas Griffin
+Description: Custom Theme for Cornish Holiday Cottages
+Version: 1.0
+Requires at least: 5.2
+Tested up to: 5.9
+Requires PHP: 7.0
+License: GNU General Public License v3 or Laterw
+License URI: https://www.gnu.org/licenses/gpl.html
+Text Domain: Cornish Holiday Cottages
+
+Cornish Holiday Cottages WordPress Theme © 2011-2022 Thomas Griffin
+Cornish Holiday Cottages is distributed under the terms of the GNU GPL
+*/
+
+
+html {
+    scroll-behavior: smooth
+}
+
+h1, h2, h3, h4 {
+    font-weight: lighter;
+}
+
+form {
+    margin: 25px 0;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration-skip-ink: auto
+}
+
+a[href^="tel"] {
+    color: inherit;
+    text-decoration: none
+}
+
+button {
+    outline: 0
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+q {
+    display: inline;
+    font-style: italic
+}
+
+q:before {
+    content: '"';
+    font-style: normal
+}
+
+q:after {
+    content: '"';
+    font-style: normal
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+th,
+td {
+    padding: 2px
+}
+
+big {
+    font-size: 120%
+}
+
+small,
+sup,
+sub {
+    font-size: 80%
+}
+
+sup {
+    vertical-align: super
+}
+
+sub {
+    vertical-align: sub
+}
+
+dd {
+    margin-left: 20px
+}
+
+kbd,
+tt {
+    font-family: courier;
+    font-size: 12px
+}
+
+ins {
+    text-decoration: underline
+}
+
+del,
+strike,
+s {
+    text-decoration: line-through
+}
+
+dt {
+    font-weight: bold
+}
+
+address,
+cite,
+var {
+    font-style: italic
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent
+}
+
+.sticky {}
+
+.bypostauthor {}
+
+.wp-caption {}
+
+.wp-caption-text {}
+
+.gallery-caption {}
+
+.alignright {}
+
+.alignleft {}
+
+.aligncenter {}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    word-break: normal
+}
+
+.screen-reader-text:focus {
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6);
+    clip: auto !important;
+    -webkit-clip-path: none;
+    clip-path: none;
+    color: #007acc;
+    display: block;
+    font-size: 14px;
+    font-size: .875rem;
+    font-weight: 700;
+    height: auto;
+    right: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000
+}
+
+.skip-link {
+    left: -9999rem;
+    top: 2.5rem;
+    z-index: 999999999;
+    text-decoration: underline
+}
+
+.skip-link:focus {
+    display: block;
+    left: 6px;
+    top: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    z-index: 100000;
+    right: auto
+}
+
+.visually-hidden:not(:focus):not(:active),
+.form-allowed-tags:not(:focus):not(:active) {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap
+}
+
+#header {
+    background-color: rgb(225, 225, 225);
+}
+
+.header-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+#branding {
+    width: 20%;
+}
+
+#menu {
+    width: 80%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#menu li {
+    display: inline-block;    
+}
+
+#menu a {
+    text-decoration: none;
+    padding: 25px;
+    color: #737373;
+    font-size: 1.2rem;
+    transition: background-color .2s;
+}
+
+#menu a:hover {
+    background-color: #333;
+    color: #FFF;
+}
+
+body:not(.home) #container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+#footer {
+    background-color: rgb(225, 225, 225);
+    padding: 50px;
+    text-align: center;
+}
+
+.slick-slider {
+    width: 100%;
+    max-width:100%;
+}
+
+.home-enquire-form {
+    position: absolute;
+    top: 50%;
+    left: -125%;
+    text-align: left;
+    transform: translate(-25%, -50%);
+    z-index: 1;
+    background-color: #f9f9f9;
+    padding: 20px 60px;
+    animation: slidein .5s;
+    animation-fill-mode: forwards;
+    max-width: 550px;
+  }
+
+  @keyframes slidein {
+    to { left: 25% }
+}
+
+input, textarea, select, option {
+    border: 1px rgba(204, 204, 204, 0.406) solid;
+    width: 100%;
+    border-radius: 2px;
+    font-family: "Source Sans Pro" !important;
+    font-size:16px;
+}
+
+button, a.button {
+    font-family: "Source Sans Pro" !important;
+}
+
+input::placeholder, textarea::placeholder {
+    opacity: .35;
+}
+
+input, textarea, select {
+    padding: 10px 10px;
+
+}
+
+.home-enquire-form span {
+    margin: 10px 0;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.home-enquire-form h2 {
+    font-size: 3rem;
+}
+
+#home-enquire {
+    text-align: center;
+    position: relative;
+}
+
+input[type='submit'] {
+    cursor: pointer;
+}
+
+.page-title, .entry-title {
+    font-size: 3em;
+    font-style: bold;
+    margin: 25px 0;
+}
+
+.woocommerce span.onsale {
+    height: 3.236em;
+    width: 3.236em;
+    padding: .202em;
+    font-size: 1em;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    line-height: 3.236em;
+    top: -.5em;
+    left: -.5em;
+    margin: 0;
+    border-radius: 100%;
+    background-color: #0f6cce;
+    color: #fff;
+    font-size: .857em;
+    z-index: 9;
+    vertical-align: middle;
+    box-sizing: content-box;
+  }
+
+  .single-product .woocommerce-product-attributes-item--attribute_sleeps .woocommerce-product-attributes-item__label::before,
+  .single-product .woocommerce-product-attributes-item--attribute_pa_sleeps .woocommerce-product-attributes-item__label::before {
+	content: "\f186";
+	font-family: 'Font Awesome\ 5 Free';
+	font-size: 40px !important;
+	color: black !important;
+	padding-right: 10px
+}
+
+.single-product .woocommerce-product-attributes-item--attribute_bedrooms .woocommerce-product-attributes-item__label::before,
+.single-product .woocommerce-product-attributes-item--attribute_pa_bedrooms .woocommerce-product-attributes-item__label::before {
+	content: "\f236";
+	font-family: 'Font Awesome\ 5 Free';
+	font-size: 40px !important;
+	color: black !important;
+	padding-right: 10px
+}
+
+.single-product .woocommerce-product-attributes-item--attribute_bathrooms .woocommerce-product-attributes-item__label::before,
+.single-product .woocommerce-product-attributes-item--attribute_pa_bathrooms .woocommerce-product-attributes-item__label::before {
+	content: "\f2cd";
+	font-family: 'Font Awesome\ 5 Free';
+	font-size: 40px !important;
+	color: black !important;
+	padding-right: 10px
+}
+
+.single-product .woocommerce-product-attributes-item--attribute_pets-allowed .woocommerce-product-attributes-item__label::before,
+.single-product .woocommerce-product-attributes-item--attribute_pa_pets-allowed .woocommerce-product-attributes-item__label::before {
+	content: "\f1b0";
+	font-family: 'Font Awesome\ 5 Free';
+	font-size: 40px !important;
+	color: black !important;
+	padding-right: 10px;
+}
+
+p {
+    line-height: 25px;
+}
+
+#header-logo {
+    width: 100%;
+}
+
+.page-template-about-page .entry-content, .page-template-contact-page .entry-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 150px 0;
+}
+
+.page-template-about-page #page-thumbnail {
+    flex: 1 0 40%;
+}
+
+#page-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.page-template-about-page #page-content {
+    flex: 1 0 60%;
+}
+
+.wpcf7-submit {
+
+    width: auto;
+    background-color: #ebebeb;
+    padding: 10px 25px;
+    border-radius: 0;
+}
+
+.page-template-contact-page #page-content {
+    flex: 1 0 60%;
+}
+
+.page-template-contact-page #page-contact {
+    flex: 1 0 40%;
+    padding: 0 50px;
+}
+
+@media (max-width: 1265px) {
+    .home-enquire-form {
+        position: static;
+        text-align: left;
+        transform: unset;
+        padding: 20px 60px;
+        max-width: 100%;
+        width: 650px;
+        margin: 75px auto;
+      }
+      .sa_vert_center>div {
+          padding: 0 !important;
+      }
+
+.sa_vert_center h1 {
+	font-size: 2rem !important;
+	color: #FFF !important;
+}
+.sa_vert_center h2 {
+ 	font-size: 1rem !important;
+color: #FFF !important;
+}
+
+      .page-template-contact-page .entry-content {
+          
+		align-items: normal;
+      }
+
+	.page-template-contact-page .entry-content, .page-template-about-page .entry-content {
+flex-direction: column;
+}
+
+}
+

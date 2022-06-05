@@ -1,0 +1,6 @@
+.wp-adminify.wp-activity-log_page_wsal-settings #audit-log-settings .nav-tabs {
+  display: block !important;
+}
+.wp-adminify.wp-activity-log_page_wsal-settings #audit-log-settings #PruningDate {
+  width: 45px !important;
+}
