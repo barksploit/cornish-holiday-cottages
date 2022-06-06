@@ -1,4 +1,4 @@
-![alt text](https://github.com/barksploit/cornish-holiday-cottages/blob/master/mainlogowhitebg.png?raw=true)
+![alt text](https://github.com/barksploit/cornish-holiday-cottages/blob/master/images/screenshot.png?raw=true)
 
 # Cornish Holiday Cottages
 
